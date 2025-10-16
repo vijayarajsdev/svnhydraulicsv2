@@ -71,6 +71,21 @@ color: aliceblue;
     margin-bottom: 3px ;
     margin-left: 20px;
 }
+.productswrapper{
+    background-color: rgb(246, 235, 241);
+    height: 50vh;
+    padding: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.productcardimage{
+    border-radius: 25px;
+}
+.productswrapper h4{
+    text-align: center;
+}
 .whatweoffer{
     display: flex;
     flex-wrap: wrap;
@@ -125,6 +140,12 @@ padding: 100px 100px;
     width: 50vw;
    display: flex;
    justify-content: flex-start;
+}
+.contactusleftgrid a{
+    text-decoration: underline;
+}
+.contactusleftgrid a:hover{
+    color: red;
 }
 .contactusrightgrid{
     padding: 0px 50px;
@@ -183,6 +204,9 @@ padding: 100px 100px;
     .contactusleftgrid{
     margin: 0px 20px;
 }
+.contactusleftgrid h3{
+    font-size: medium;
+}
 .contactuswrapper{
     flex-wrap: wrap;
 }
@@ -196,4 +220,26 @@ padding: 100px 100px;
    margin: 0px;
    padding: 0px;
 }
+ .productswrapper {
+    padding: 50px;
+    width: 500vw;
+     background-color: rgb(246, 235, 241);
+    justify-content: initial;
+    animation: scroll 5s linear infinite;
+  }
+  .productcardcontainer{
+     background-color: rgb(246, 235, 241);
+     margin: 25px;
+  }
+}
+
+
+/* Keyframes for infinite scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-45%);
+  }
 }

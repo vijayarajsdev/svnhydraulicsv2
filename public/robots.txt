@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://svnhydraulics.in
+
+# Sitemaps
+Sitemap: https://svnhydraulics.in/sitemap.xml

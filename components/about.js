@@ -1,7 +1,7 @@
 import styles from '@/app/layout.module.css'
 const About = () => {
   return (
-          <section className={styles.aboutus}>
+          <section className={styles.aboutus} id='about'>
         <div className={styles.aboutuscontent}>
         <h1 className={styles.aboutusheader}>About us</h1>
         <p className={styles.aboutusbody}>

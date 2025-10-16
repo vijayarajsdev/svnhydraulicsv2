@@ -1,6 +1,9 @@
+'use client'
 import styles from '@/app/layout.module.css'
+import Reveal from './reveal'
 const Whyus = () => {
   return (<>
+  <Reveal direction='left' delay={0.2}>
        <section className={styles.whatweoffer}>
       <div className={styles.whatweoffertitlegrid}><h1>What We Offer</h1></div>
       <div className={styles.whatweofferlistgrid}>
@@ -11,6 +14,8 @@ const Whyus = () => {
         </ul>
         </div>
     </section>
+    </Reveal>
+    <Reveal direction='right' delay={0.2}>
        <section className={`${styles.whatweoffer} ${styles.whychooseus}`}>
         <div className={styles.whatweoffertitlegrid}><h1>Why choose us</h1></div>
         <div className={styles.whatweofferlistgrid}>
@@ -22,7 +27,7 @@ const Whyus = () => {
         </ul>
         </div>
       
-    </section></>
+    </section></Reveal></>
   )
 }
 

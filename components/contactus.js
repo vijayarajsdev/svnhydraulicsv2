@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '@/app/layout.module.css'
 const Contactus = () => {
   return (
-    <section className={styles.contactus}>
+    <section className={styles.contactus} id='contactus'>
         <h1>Contact Us</h1>
         <div className={styles.contactuswrapper}>
         <div className={styles.contactusleftgrid}>
