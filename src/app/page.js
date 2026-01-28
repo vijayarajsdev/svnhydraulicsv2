@@ -13,6 +13,14 @@ export default function Home() {
     <main>
       {/* Hero Section */}
       <section className={styles.heroSection}>
+        <Image src='/images/hero-bg.png'
+        alt='Hydraulic Hose Manufacturer background'
+        fill
+        style={{objectFit:"cover"}}
+        priority
+        />
+        <div className={styles.heroOverlay}></div>
+        <div className={styles.heroContent}>
         <h1 className={styles.title}>
           SVN HYDRAULICS
         </h1>
@@ -25,9 +33,10 @@ export default function Home() {
           <Link href="/products" className={styles.primaryButton}>
             View Products
           </Link>
-          <a href="/contact" className={styles.primaryButton} style={{ backgroundColor: 'transparent', border: '2px solid white' }}>
+          <Link href="/contact" className={styles.primaryButton} style={{ backgroundColor: 'transparent', border: '2px solid white' }}>
             Contact Us
-          </a>
+          </Link>
+          </div>
         </div>
       </section>
       {/* NEW: Improved Trust Signals Section */}
