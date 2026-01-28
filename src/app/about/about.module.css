@@ -1,0 +1,98 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.content {
+  padding: 0 20px;
+}
+
+.textBox {
+  margin-bottom: 50px;
+}
+
+.textBox h2 {
+  color: #ff6600;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.textBox p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Stats Section */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.statBox {
+  background: white;
+  border: 1px solid #eee;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.label {
+  color: #777;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.infrastructure {
+  background-color: #fafafa;
+  /* Changed padding to give more space on the left */
+  /* Order: Top | Right | Bottom | Left */
+  padding: 40px 40px 40px 60px; 
+  border-left: 5px solid #ff6600;
+  border-radius: 4px;
+}
+
+.infrastructure h2 {
+  margin-top: 0;
+  /* Optional: Adjust header color if needed, otherwise it inherits */
+}
+
+/* This is the new rule to fix the font "cramping" */
+.infrastructure p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 0;
+}

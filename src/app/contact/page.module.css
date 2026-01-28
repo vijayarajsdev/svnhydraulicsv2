@@ -1,0 +1,109 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Desktop View: Split 50/50 */
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+  }
+}
+
+.infoBox {
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+.infoBox h2 {
+  margin-top: 0;
+  color: #ff6600;
+  margin-bottom: 20px;
+}
+
+.introText {
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.contactItem {
+  margin-bottom: 30px;
+}
+
+.contactItem h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #222;
+  display: flex;
+  align-items: center;
+}
+
+.contactItem p {
+  margin: 0;
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.contactItem a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid #ff6600;
+}
+
+.contactItem a:hover {
+  background-color: #ff6600;
+  color: white;
+}
+
+.subText {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.mapSection {
+  padding: 20px; /* Slight padding on mobile */
+}
+
+@media (min-width: 768px) {
+  .mapSection {
+    padding: 0; /* Full bleed on desktop */
+  }
+}
+
+.mapContainer {
+  height: 100%;
+  min-height: 350px;
+  width: 100%;
+}
+
+.mapContainer iframe {
+  display: block;
+}
+
+.mapNote {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: center;
+  margin-top: 10px;
+}

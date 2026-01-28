@@ -1,0 +1,100 @@
+/* Container for the whole bar */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* The inner content wrapper */
+.container {
+  max-width: 1100px; /* Reduced from 1200px to keep things closer */
+  width: 95%; /* Adds safety margin on small screens */
+  margin: 0 auto;
+  height: 70px; /* Fixed height for consistency */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- LOGO STYLING --- */
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #111;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: -0.5px; /* Tighter letter spacing looks more modern */
+  white-space: nowrap; /* Prevents logo from wrapping lines */
+}
+
+.highlight {
+  color: #ff6600;
+}
+
+/* --- DESKTOP LINKS --- */
+.navLinks {
+  display: none; /* Hidden on mobile */
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.navLinks a:hover {
+  color: #ff6600;
+}
+
+/* --- CALL BUTTON --- */
+.callButton {
+  background-color: #111;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+.callButton:hover {
+  background-color: #ff6600;
+}
+
+/* --- MOBILE & TABLET ADJUSTMENTS --- */
+/* (This runs only on screens larger than 768px) */
+@media (min-width: 768px) {
+  .navLinks {
+    display: flex; /* Show links on desktop */
+  }
+}
+
+/* (This runs only on mobile screens smaller than 768px) */
+@media (max-width: 768px) {
+  .container {
+    height: 60px; /* Slightly shorter navbar on mobile */
+  }
+
+  .logo {
+    font-size: 1.1rem; /* Smaller logo text */
+  }
+
+  .callButton {
+    padding: 8px 12px; /* Smaller button */
+    font-size: 0.8rem;
+  }
+}

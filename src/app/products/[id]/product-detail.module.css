@@ -1,0 +1,127 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.breadcrumb {
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #333;
+}
+
+.breadcrumb a:hover {
+  color: #ff6600;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* Tablet & Desktop Layout */
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr; /* Split 50/50 */
+    align-items: start;
+  }
+}
+
+.imageContainer {
+  background: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.infoSection {
+  padding: 10px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.category {
+  color: #ff6600;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.specsBox {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+  border-left: 4px solid #333;
+  margin-bottom: 30px;
+}
+
+.specsBox h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.specsBox ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.specsBox li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.ctaBox {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.enquireButton {
+  display: inline-block;
+  background-color: #ff6600;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.enquireButton:hover {
+  background-color: #e65c00;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 50px;
+  color: red;
+}
